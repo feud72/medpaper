@@ -1,0 +1,13 @@
+from django.db import models
+
+# Create your models here.
+
+class PubmedApi(models.Model):
+    name = models.CharField('NAME', max_length=30, primary_key=True)
+    url = models.CharField('URL', max_length=70, null=True)
+    description = models.CharField('DESCRIPTION', max_length=300, blank=True)
+    content = models.TextField('CONTENT')
+
+    def __str__(self):
+        return self.name
+    

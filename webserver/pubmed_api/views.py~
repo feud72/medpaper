@@ -1,0 +1,10 @@
+from django.shortcuts import render
+from django.views.generic import ListView
+
+from .models import Pubmed_api
+# Create your views here.
+
+
+class ApiListView(ListView):
+    model = Pubmed_api
+    template_name = 'pubmed_api/pubmed_api_list.html'

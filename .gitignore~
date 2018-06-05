@@ -1,0 +1,11 @@
+webserver/secrets.json
+webserver/static/
+webserver/media/
+webserver/webserver.sock
+.gitignore
+webserver/conf/wsgi.py
+
+*.log
+*.pot
+*.pyc
+webserver/conf/__pycache__/

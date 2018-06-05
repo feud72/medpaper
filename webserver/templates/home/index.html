@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Medpaper: home{% endblock %}
+
+{% block header %}
+
+    <h1>CONTENT</h1>
+
+{% endblock %}
+
+
+{% block content %}
+
+<table id="applist" class="pure-table-horizontal">
+    <tr>
+        <td><a href="{%url 'bookmark:index' %}">Bookmark</a></td>
+        <td>북마크입니다.</td>
+        <td>난난난난</td>
+    </tr>
+    <tr>
+        <td><a href="{%url 'blog:index' %}">Blog</a></td>
+        <td>블로그입니다.</td>
+        <td>Red Flavour</td>
+    </tr>
+</table>
+{% endblock content %}
+

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block header %}
+
+<h1>Pubmed API</h1>
+
+{% endblock %}
+
+
+{% block content %}
+
+<div class="pure-g">
+	<div class="pure-u-1-6">Name</div>
+	<div class="pure-u-1-6">URL</div>
+	<div class="pure-u-1-2">Description</div>
+	
+	
+	{% for object in object_list %}
+	<div class="pure-u-1-6">{{ object.name }}</div>
+	<div class="pure-u-1-6">{{ object.url }}</div>
+	<div class="pure-u-1-6">{{ object.description }}</div>
+	{% endfor %}
+
+</div>
+
+
+{% endblock %}
+

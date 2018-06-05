@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Medpaper : bookmark_list{% endblock %}
+
+{% block header %}
+
+            <h2>Bookmark List</h2>
+
+{% endblock %}
+
+
+{% block content %}
+            
+            <ul>
+                {% for bookmark in object_list %}
+                <li><a href="{% url 'bookmark:detail' bookmark.id %}">{{ bookmark.title }}</a></li>
+                {% endfor %}
+            </ul>
+ 
+{% endblock %}

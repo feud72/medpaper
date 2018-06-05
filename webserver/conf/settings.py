@@ -1,0 +1,1 @@
+/data/data/com.termux/files/home/django/webserver/conf/base.py

@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block header %}
+
+<h1>Pubmed API</h1>
+
+{% endblock %}
+
+
+{% block content %}
+
+<h2 class="content-subhead">Use the E-utility URL</h2>
+<p>All E-utility requests should be made to URLs beginning with the following string:</p>
+<p>https://eutils.ncbi.nlm.nih.gov/entrez/eutils/</p>
+<p>These URLs direct requests to servers that are used only by the E-utilities and that are optimized to give users the best performance.</p>
+
+
+<h2 class="content-subhead">E-utilities in Brief</h2>
+
+<table class="pure-table pure-table-striped">
+	<thead>
+		<tr>
+			<td>Name</td>
+			<td>URL</td>
+			<td>Description</td>
+		</tr>
+	</thead>
+	
+	<tbody>
+	<tr>
+		{% for object in object_list %}
+		<td>{{ object.name }}</td>
+		<td>{{ object.url }}</td>
+		<td>{{ object.description }}</td>
+	</tr>
+	{% endfor %}
+	</tbody>
+
+</table>
+
+{% endblock %}
+

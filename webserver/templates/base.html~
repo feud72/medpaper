@@ -1,0 +1,39 @@
+{% include 'header.html' %}
+
+<body>
+
+<div id="layout" style="font-family: 'Lato', sans-serif; font-family: 'Nanum Gothic', sans-serif;">
+	
+	{% include 'menu.html' %}
+
+    <div id="main">
+	    <div class="header">
+
+		    {% block header %} {% header %}
+
+	    </div>
+
+
+	    <div class="content">
+
+		    {% block content %} {% endblock %}
+	    
+	    </div>
+    
+
+	    <div class ="content">
+
+		    {% include 'footer.html' %}
+
+	    </div>
+
+    </div>
+
+</div>
+
+{% load staticfiles %}
+<script src="{% static 'purecss/js/ui.js' %}"></script>
+
+</body>
+</html>
+
