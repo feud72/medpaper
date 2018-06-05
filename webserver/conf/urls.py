@@ -26,6 +26,7 @@ urlpatterns = [
     path('bookmark/', include('bookmark.urls', namespace='bookmark')),
     path('blog/', include('blog.urls', namespace='blog')),
     path('pubmed_api/', include('pubmed_api.urls', namespace='pubmed_api')),
+    path('form/', include('form.urls', namespace='form')),
 ]
 
 if settings.DEBUG:
